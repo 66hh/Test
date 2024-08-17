@@ -17,6 +17,6 @@ rule("linkrule")
         target:add("shflags", "bedrock_runtime_var.lib", {force = true})
     end)
     after_link(function (target)
-        os.rm("$(buildir)/.prelink/lib/*.lib")
+        
     end)
 rule_end()
